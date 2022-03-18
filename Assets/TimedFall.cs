@@ -23,7 +23,7 @@ public class TimedFall : MonoBehaviour
         if(time > fallTime){
             if(!fall){
                 fall = true;
-                m_Rigidbody.AddForce(transform.forward * 1000.0F);
+                m_Rigidbody.AddForce(transform.forward * -1000.0F);
             }
         }
         
