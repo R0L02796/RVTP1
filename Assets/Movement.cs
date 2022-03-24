@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     public CharacterController controller;
-
+    public GameObject camera;
     public float speed = 12f;
  
     // Update is called once per frame
@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = camera.transform.right * x + camera.transform.forward * z;
 
         controller.Move( move * speed * Time.deltaTime);
     }
