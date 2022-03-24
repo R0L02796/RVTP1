@@ -6,7 +6,7 @@ public class TimedFall : MonoBehaviour
 {
     public GameObject cube;
     bool fall = false;
-    float fallTime = 2.0F;
+    public float fallTime = 2.0F;
 
     // Start is called before the first frame update
     void Start()
