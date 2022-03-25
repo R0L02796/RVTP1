@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.15792507, g: 0.18167283, b: 0.19774263, a: 1}
+  m_IndirectSpecularColor: {r: 0.15792558, g: 0.18167329, b: 0.19774328, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2486,6 +2486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 59799834}
   - component: {fileID: 59799835}
+  - component: {fileID: 59799836}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -2525,6 +2526,18 @@ MonoBehaviour:
   m_TrackingOriginMode: 1
   m_TrackingSpace: 0
   m_CameraYOffset: 1.36144
+--- !u!114 &59799836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59799833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06715f27b450ed4f925c68b6cabf6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &61658123
 GameObject:
   m_ObjectHideFlags: 0
@@ -45320,6 +45333,8 @@ GameObject:
   - component: {fileID: 1170084483}
   - component: {fileID: 1170084482}
   - component: {fileID: 1170084484}
+  - component: {fileID: 1170084486}
+  - component: {fileID: 1170084485}
   m_Layer: 0
   m_Name: FPPlayer
   m_TagString: Untagged
@@ -45339,12 +45354,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &1170084483
 Transform:
   m_ObjectHideFlags: 0
@@ -45368,7 +45383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170084481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cce683f5e9a4b440878b3c1f00cc627, type: 3}
   m_Name: 
@@ -45376,6 +45391,30 @@ MonoBehaviour:
   controller: {fileID: 1170084482}
   camera: {fileID: 59799833}
   speed: 3
+--- !u!114 &1170084485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170084481}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1170084486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170084481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f478d43f27e324b7199d5dccff4298b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1171127113
 GameObject:
   m_ObjectHideFlags: 0
@@ -47639,7 +47678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227223496}
   m_LocalRotation: {x: 0, y: -0.9914449, z: 0, w: 0.13052626}
-  m_LocalPosition: {x: -111.5, y: 358.983, z: 696.2}
+  m_LocalPosition: {x: -110.3, y: 358.983, z: 696.2}
   m_LocalScale: {x: 3.5000007, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1337968816}
